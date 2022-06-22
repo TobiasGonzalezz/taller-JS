@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background: var(--backgorund);
 }
 
 :root {
@@ -49,7 +50,7 @@ h1 {
 
 main {
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -57,7 +58,7 @@ main {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   height: 95%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -69,7 +70,8 @@ main {
 .box {
   border: solid 3px;
   border-color: rgb(211, 214, 218);
-  width: 80%;
+  width: 100%;
+  height: 120%;
   aspect-ratio: 1 / 1;
   justify-self: center;
   font-size: 4rem;
@@ -191,3 +193,8 @@ main {
       transform: translateY(0)
   }
 }
+
+@media screen and (max-width: 700px) {
+  .button {
+      margin: -4.3vh;
+  } }
